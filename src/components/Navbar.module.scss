@@ -1,0 +1,125 @@
+.nav {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    .navContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+        max-width: 1200px;
+        width: 90%;
+        margin: 0 auto;
+        a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: #333;
+        }
+        .logo {
+            img {
+                width: 100px;
+                object-fit: cover;
+            }
+        }
+        .navLinks {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            a {
+                color: #021969;
+                &:hover {
+                    font-weight: bold;
+                }
+            }
+        }
+        .contact {
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            background-color: #021969;
+            color: #fff;
+            border-radius: 25px;
+            font-size: 1rem;
+            &:hover {
+                background-color: #000;
+            }
+        }
+        .navBtn {
+            display: none;
+        }
+        
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .nav {
+        .navContainer {
+            .navLinks {
+                display: none;
+            }
+            .contact {
+                display: none;
+            }
+            .navBtn {
+                all: unset;
+                cursor: pointer;
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .mobileNav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 9999;
+        .navContainer {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 1rem 0;
+            z-index: 1;
+            min-height: 100%;
+            overflow-y: auto;
+            .logoContainer {
+                display: flex;
+                justify-content: center;
+                justify-content: space-between;
+                width: 90%;
+                margin: 0 auto;
+                .logo {
+                    img {
+                        width: 100px;
+                        object-fit: cover;
+                    }
+                }
+                .navBtn {
+                    all: unset;
+                    cursor: pointer;
+                    font-size: 1.5rem;
+                }
+            }
+            .navLinks {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                width: 90%;
+                margin: 0 auto;
+                padding-left: 2rem;
+                padding-top: 2rem;
+               
+                a {
+                    text-decoration: none;
+                    color: #021969;
+                    &:hover {
+                        color: #021969;
+                        font-weight: bold;
+                    }
+                }
+            }
+           
+        }
+       
+    }
+    
+}
