@@ -15,12 +15,12 @@ import image6 from './assets/image6.png'
 import image7 from './assets/image7.png'
 import image8 from './assets/image8.png'
 import image9 from './assets/image9.png'
-import image10 from './assets/image10.jpg'
-import image11 from './assets/image11.jpg'
-import image12 from './assets/image12.jpg'
-import image13 from './assets/image13.jpg'
-import image14 from './assets/image14.jpg'
-import image15 from './assets/image15.jpg'
+import image10 from './assets/image10.JPG'
+import image11 from './assets/image11.JPG'
+import image12 from './assets/image12.JPG'
+import image13 from './assets/image13.JPG'
+import image14 from './assets/image14.JPG'
+import image15 from './assets/image15.JPG'
 
 
 function App() {
