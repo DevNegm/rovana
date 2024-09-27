@@ -1,9 +1,8 @@
-import { useRef, useState } from 'react'
+import { useRef } from 'react'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import 'swiper/css';
-import { MdArrowBackIosNew, MdArrowForwardIos } from 'react-icons/md'
 import { Navigation,Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import image1 from './assets/image1.png'
@@ -21,7 +20,8 @@ import image12 from './assets/image12.JPG'
 import image13 from './assets/image13.JPG'
 import image14 from './assets/image14.JPG'
 import image15 from './assets/image15.JPG'
-
+import aboutImage from './assets/about.jpg'
+import whyus from './assets/whyus.jpg'
 
 function App() {
 
@@ -106,19 +106,26 @@ function App() {
     <main id='home'>
      <Navbar handleScroll={scrollToSection} about={aboutUsRef} whyus={whyUsRef} services={servicesRef} />
      <Header/>
-     <section className='section' id='about-us' ref={aboutUsRef} >
-      <h2>About Us</h2>
-      <h3>Rovana Tours: Your Gateway to the World</h3>
-      <p>Rovana Tours is a leading group of companies specializing in all types of travel experiences. Whether you're planning a pilgrimage for Hajj or Umrah, exploring stunning domestic or international destinations, or booking flights and visas, we are here to make it all effortless. With years of expertise and a passion for travel, Rovana Tours provides comprehensive, top-tier services for every type of journey.</p>
+     <section className='section' style={{marginTop:'2rem'}} id='about-us' ref={aboutUsRef} >
+     <img src={aboutImage} alt="نبذة عنا" />
+      <div className='content'>
+      <h2>نبذة عنا</h2>
+      <h3>روفانا تورز: بوابتك إلى العالم</h3>
+      <p>روفانا تورز هي شركة مساهمة مصرية و متخصصة في جميع أنواع تجارب السفر. سواء كنت تخطط لرحلة حج أو عمرة، أو لاستكشاف وجهات سياحية رائعة محليًا أو دوليًا، أو لحجز تذاكر الطيران والتأشيرات، نحن هنا لجعل كل ذلك سهلًا. بفضل سنوات من الخبرة وشغفنا بالسفر، تقدم روفانا تورز خدمات شاملة ورفيعة المستوى لجميع أنواع الرحلات.</p>
+      </div>
      </section>
      <section className='section' id='why-us' ref={whyUsRef} >
-      <h2>Why Us</h2>
-      <h3>Affordable Excellence in Every Journey</h3>
-      <p>At Rovana Tours, we believe that travel should be accessible, comfortable, and enjoyable for everyone. We offer competitive prices on all our services, from religious pilgrimages to leisure vacations. Our commitment to quality, affordability, and customer satisfaction makes us the go-to choice for travelers seeking value without compromise.</p>
+      <div className='content'>
+      <h2>لماذا نحن</h2>
+      <h3>التميز بأسعار معقولة في كل رحلة</h3>
+      <p>في روفانا تورز، نؤمن بأن السفر يجب أن يكون متاحًا، مريحًا، وممتعًا للجميع. نقدم أسعارًا تنافسية على جميع خدماتنا، بدءًا من الرحلات الدينية إلى الإجازات الترفيهية. التزامنا بالجودة، الأسعار المعقولة، ورضا العملاء يجعلنا الخيار الأمثل للمسافرين الذين يبحثون عن القيمة دون تنازل.</p>
+      </div>
+     <img src={whyus} alt="لماذا نحن" />
+
      </section>
-     <section className='section' id='services' ref={servicesRef}>
-      <h2>Services</h2>
-      <h3>Discover Our Services</h3>
+     <section className='section2' id='services' ref={servicesRef}>
+      <h2>خدماتنا</h2>
+      <h3>اكتشف ما نقدم</h3>
       <div className='slider'>
       <Swiper
           spaceBetween={16}

@@ -4,8 +4,8 @@ const Header = () => {
   return (
     <section className={classes.header}>
         <div className={classes.headerContent}>
-            <h1>Your Trusted Travel Partner for All Journeys</h1>
-            <p>From Hajj and Umrah to unforgettable vacations, Rovana Tours makes every trip seamless, affordable, and memorable.</p>
+            <h1>شريكك الموثوق به في جميع رحلاتك</h1>
+            <p>من الحج والعمرة إلى الإجازات التي لا تُنسى، تجعل روفانا تورز كل رحلة سلسة، ميسورة التكلفة، ولا تُنسى..</p>
         </div>
     </section>
   )
