@@ -47,6 +47,12 @@ const Footer = ({handleScroll,whyus,about,services}) => {
             </a>
         </div>
         <div className={classes.footerLinks}>
+        <p>للشكاوي</p>
+             <a href="tel:01070750010" style={{display:'flex',alignItems:'center',gap:'0.5rem'}} target='_blank'>
+                <FaPhone/> 01070750010
+            </a>
+        </div>
+        <div className={classes.footerLinks}>
             <p>وسائل التواصل الاجتماعي</p>
             <div className={classes.social}>
             <a href="https://www.facebook.com/profile.php?id=61553590025215" target='_blank'>
@@ -65,7 +71,7 @@ const Footer = ({handleScroll,whyus,about,services}) => {
             </div>
         </div>
         <div className={classes.footerLinks} style={{width:'100%'}}>
-        <p style={{textAlign:'center',paddingTop:'2rem'}}>© 2024 Rovana Tours. جميع الحقوق محفوظه.</p>
+        <p style={{textAlign:'center',paddingTop:'2rem'}}>© 2024 Rovana Tours. جميع الحقوق محفوظه. رقم ترخيص الشركة 528</p>
         </div>
     </footer>
   )
