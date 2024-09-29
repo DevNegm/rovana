@@ -73,6 +73,66 @@ body {
     }
   }
 }
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  .card {
+    max-width: 300px;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #021969;
+    transition: all 250ms ease-in-out;
+    color: #fff;
+    border-radius: 10px;
+    svg {
+      font-size: 1.5rem;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+    p {
+    color: #fff;
+    }
+  }
+}
+.map {
+  width: 100%;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  p {
+    font-size: 2rem !important;
+    font-weight: bold !important;
+    color: #021969 !important;
+  }
+  iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 15px;
+  }
+}
 .section2 {
   padding: 3rem 0;
   min-height: 70vh;
